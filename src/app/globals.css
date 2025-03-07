@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --background: red;
+  --foreground: #171717;
+}
+
+body {
+  background: linear-gradient(135deg, #000000, #0c060d);
+  color: var(--foreground);
+  height: 100vh;
+  position: relative;
+}
