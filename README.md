@@ -35,7 +35,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
 # Установка Docker Compose для проекта Next.js
 
 Чтобы настроить проект с использованием Docker и Docker Compose, выполните следующие шаги.
@@ -55,6 +54,28 @@ Docker Compose входит в состав Docker, но может потреб
 
    ```bash
    sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r .tag_name)/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   ```
 
+# Установка Docker Compose для Windows
 
-docker-compose up -d
+Чтобы настроить проект с использованием Docker и Docker Compose, выполните следующие шаги.
+
+## 1. Установите Docker Desktop
+
+Docker Compose входит в состав Docker Desktop для Windows. Чтобы установить Docker:
+
+1. Перейдите на страницу [Скачивание Docker Desktop для Windows](https://www.docker.com/products/docker-desktop) и скачайте установочный файл.
+2. Запустите установочный файл и следуйте инструкциям на экране для завершения установки.
+3. После завершения установки, откройте Docker Desktop и убедитесь, что Docker работает корректно.
+
+## 2. Проверьте установку Docker Compose
+
+1. Откройте **Командную строку** или **PowerShell**.
+2. Выполните команду:
+
+   ```bash
+   docker-compose --version
+   ```
+
+## 4. Чтобы запустить контейнеры в фоновом режиме, используйте команду:
+1.  docker-compose up -d
