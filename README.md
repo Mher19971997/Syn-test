@@ -34,3 +34,27 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# Установка Docker Compose для проекта Next.js
+
+Чтобы настроить проект с использованием Docker и Docker Compose, выполните следующие шаги.
+
+## 1. Установите Docker
+
+Для начала убедитесь, что Docker установлен на вашем компьютере. Если он еще не установлен, скачайте и установите Docker с официального сайта:  
+[Скачать Docker](https://www.docker.com/get-started)
+
+## 2. Установите Docker Compose
+
+Docker Compose входит в состав Docker, но может потребоваться отдельная установка для некоторых операционных систем.
+
+### Для Linux
+
+1. Скачайте последнюю версию Docker Compose с официального репозитория:
+
+   ```bash
+   sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r .tag_name)/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+
+docker-compose up -d
