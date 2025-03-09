@@ -24,12 +24,13 @@ function RegisterPage() {
         password,
       });
 
-      if (res.data.token) {
+      if (res.data) {
+        toast.success("Регистрация прошла успешно");
         router.push("/login");
       }
     } catch {
-      setError("Email is already registered or an error occurred.");
-      toast.warning(`Email is already registered or an error occurred.`);
+      setError("");
+      toast.warning(`Email уже зарегистрирован или произошла ошибка.`);
     }
   };
 
